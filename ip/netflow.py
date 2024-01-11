@@ -20,6 +20,7 @@ import time
 #     job = "{" + f'job="{job}"' + "}"
 #     return f'http://172.16.152.28:33000/loki/api/v1/query_range?query=count_over_time({job} [1m])&start={ts}&end={ts}'
 
+
 class netflowObj:
     def __init__(self, src_ip, src_port, des_ip, des_port, bytes, proto):
         self.src_ip = src_ip
